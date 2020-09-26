@@ -12,5 +12,5 @@ public class BookModel {
     private String title;
     private int publishYear;
     private String genre;
-    private int count;
+    private int amount;
 }

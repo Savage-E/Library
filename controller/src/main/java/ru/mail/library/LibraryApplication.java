@@ -19,7 +19,7 @@ public class LibraryApplication {
 
         for (BookModel i : library
         ) {
-            if (i.getAuthor().getFirstName().equals(s)) {
+            if (i.getAuthor().getFirstName().equals(s.trim())) {
                 System.out.println(gson.toJson(i));
             }
         }

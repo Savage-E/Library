@@ -15,3 +15,11 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     implementation 'com.google.code.gson:gson:2.8.6'
 }
+
+ext{
+    javaMainClass = 'ru.mail.library.LibraryApplication'
+
+}
+application{
+    mainClassName = javaMainClass
+}
