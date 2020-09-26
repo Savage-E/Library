@@ -1,16 +1,25 @@
 package ru.mail.library;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Library {
+public class Library implements Iterable<BookModel> {
 
-    private ArrayList<BookModel> arrayList;
+    private final ArrayList<BookModel> arrayList;
 
     public Library() {
-        this.arrayList = new ArrayList();
+        arrayList = new ArrayList();
     }
 
-    public void addBook(BookModel bookModel){
+    private void addBook(BookModel bookModel) {
         arrayList.add(bookModel);
+    }
+
+    @NotNull
+    @Override
+    public Iterator<BookModel> iterator() {
+      return   arrayList.iterator();
     }
 }
