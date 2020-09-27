@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 public class LibraryApplication {
     public static void main(String[] args) throws IOException {
-        System.out.println("Введите имя автора:");
+        System.out.println("Enter author name:");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
 
