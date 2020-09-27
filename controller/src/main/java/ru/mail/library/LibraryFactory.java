@@ -21,7 +21,7 @@ public class LibraryFactory {
 
     private Library initLibrary() {
         library = new Library();
-        try (Reader reader = new FileReader("library.json")) {
+        try (Reader reader = new FileReader("src/main/resources/library.json")) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             library = gson.fromJson(reader, Library.class);
         } catch (IOException fileNotFoundException) {

@@ -12,6 +12,6 @@
         <module name="library.models.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>
