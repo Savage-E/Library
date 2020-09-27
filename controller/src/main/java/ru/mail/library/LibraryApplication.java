@@ -14,7 +14,7 @@ public class LibraryApplication {
         String s = br.readLine();
 
         LibraryFactory libraryFactory = new LibraryFactory();
-        var library = libraryFactory.getLibrary();
+         Library library = libraryFactory.getLibrary();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         for (BookModel i : library
