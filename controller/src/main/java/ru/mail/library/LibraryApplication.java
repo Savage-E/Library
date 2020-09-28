@@ -16,12 +16,16 @@ public class LibraryApplication {
         LibraryFactory libraryFactory = new LibraryFactory();
         Library library = libraryFactory.getLibrary();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
+        Boolean flag=false;
         for (BookModel i : library
         ) {
             if (i.getAuthor().getFirstName().equals(s.trim())) {
                 System.out.println(gson.toJson(i));
+                if (!flag)
+                flag=true ;
             }
         }
+        if (!flag)
+        System.out.println("Author not found");
     }
 }
