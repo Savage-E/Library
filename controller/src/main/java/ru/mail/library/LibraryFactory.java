@@ -22,15 +22,7 @@ public class LibraryFactory {
 
     private Library initLibrary() {
         library = new Library();
-        /*
-        try (Reader reader = new FileReader("src/main/resources/library.json")) {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            library = gson.fromJson(reader, Library.class);
-        } catch (IOException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
-        }
-        }
-         */
+
 
         try (InputStream inputStream = getClass().getResourceAsStream("/library.json")) {
 
@@ -44,11 +36,8 @@ public class LibraryFactory {
         }
 
 
-
-
-
         return library;
-}
+    }
 
 }
 
