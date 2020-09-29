@@ -2,15 +2,16 @@ package ru.mail.library;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import org.jetbrains.annotations.NotNull;
 
 @AllArgsConstructor
 @Getter
 @Setter
 public class BookModel {
-    private int id;
-    private AuthorModel author;
-    private String title;
-    private int publishYear;
-    private String genre;
-    private int amount;
+    private @NotNull int id;
+    private @NotNull AuthorModel author;
+    private @NotNull String title;
+    private @NotNull int publishYear;
+    private @NotNull String genre;
+    private @NotNull int amount;
 }

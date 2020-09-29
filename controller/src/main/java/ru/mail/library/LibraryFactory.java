@@ -2,6 +2,7 @@ package ru.mail.library;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +11,7 @@ import java.io.InputStreamReader;
 
 public class LibraryFactory {
 
-    private Library library;
+    private @NotNull Library library;
 
     public LibraryFactory() {
         initLibrary();

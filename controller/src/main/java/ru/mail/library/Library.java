@@ -7,13 +7,13 @@ import java.util.Iterator;
 
 public class Library implements Iterable<BookModel> {
 
-    private final ArrayList<BookModel> arrayList;
+    private @NotNull final ArrayList<BookModel> arrayList;
 
     public Library() {
         arrayList = new ArrayList();
     }
 
-    private void addBook(BookModel bookModel) {
+    private void addBook(@NotNull BookModel bookModel) {
         arrayList.add(bookModel);
     }
 
